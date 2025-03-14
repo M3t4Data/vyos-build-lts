@@ -8,7 +8,7 @@ on:
     inputs:
       version:
         required: true
-        default: "1.4.0"
+        default: "1.4.1"
         description: VyOS version
         type: string
 
@@ -24,10 +24,10 @@ jobs:
       # Ref: https://docs.vyos.io/en/latest/contributing/build-vyos.html#build
       image: vyos/vyos-build:sagitta
       env:
-        TZ: Asia/Tokyo
+        TZ: Europe/Paris
       options: --privileged
     env:
-      TZ: Asia/Tokyo
+      TZ: Europe/Paris
     permissions:
       actions: read
       contents: write
